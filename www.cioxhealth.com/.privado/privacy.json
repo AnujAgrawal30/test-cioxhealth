@@ -1,0 +1,147 @@
+{
+  "repoId": "repoId",
+  "repoName": "",
+  "repoURL": "",
+  "branchName": "master",
+  "commitId": "",
+  "customerId": "cliCustomer",
+  "scanId": null,
+  "permissionList": [],
+  "piiList": [
+    {
+      "category": "Online Identifiers",
+      "element": "Cookies",
+      "dataSafetyElement": "Device or other IDs",
+      "dataSafetyCategory": "Device or other IDs",
+      "sensitive": false,
+      "sensitivity": "medium",
+      "score": 1.3,
+      "confidence": "high",
+      "scoringPoints": [
+        "high confidence",
+        "Positive Word Matched",
+        "CaseDependant Matched"
+      ],
+      "occurrences": [
+        {
+          "score": 1.3,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "Positive Word Matched",
+            "CaseDependant Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "solutions/denials-prevention.html",
+          "language": "html",
+          "excerpt": "\t\t\t\t/* Function to detect opted out users */\n\t\t\t\tfunction __gtagTrackerIsOptedOut() {\n\t\t\t\t\tfor ( var index = 0; index < disableStrs.length; index++ ) {\n\t\t\t\t\t\tif ( document.cookie.indexOf( disableStrs[ index ] + '=true' ) > -1 ) {\n\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 20,
+              "endIndex": 26
+            }
+          ],
+          "startLocationLine": 58,
+          "authorEmail": null
+        },
+        {
+          "score": 1.0,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "Positive Word Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "patients.html",
+          "language": "html",
+          "excerpt": "\t\t\t\t/* Opt-out function */\n\t\t\t\tfunction __gtagTrackerOptout() {\n\t\t\t\t\tfor ( var index = 0; index < disableStrs.length; index++ ) {\n\t\t\t\t\t\tdocument.cookie = disableStrs[ index ] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';\n\t\t\t\t\t\twindow[ disableStrs[ index ] ] = true;\n\t\t\t\t\t}\n\t\t\t\t}\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 15,
+              "endIndex": 21
+            }
+          ],
+          "startLocationLine": 72,
+          "authorEmail": null
+        },
+        {
+          "score": 1.0,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "Positive Word Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "patients.html",
+          "language": "html",
+          "excerpt": "  <script type=\"text/javascript\">\n   (function() {\n\n\t\t\t\t\t/*\tcheck if webfonts are disabled by user setting via cookie - or user must opt in.\t*/\n\t\t\t\t\tvar html = document.getElementsByTagName('html')[0];\n\t\t\t\t\tvar cookie_check = html.className.indexOf('av-cookies-needs-opt-in') >= 0 || html.className.indexOf('av-cookies-can-opt-out') >= 0;\n\t\t\t\t\tvar allow_continue = true;\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 59,
+              "endIndex": 65
+            },
+            {
+              "lineNumber": 5,
+              "startIndex": 9,
+              "endIndex": 15
+            },
+            {
+              "lineNumber": 5,
+              "startIndex": 51,
+              "endIndex": 57
+            },
+            {
+              "lineNumber": 5,
+              "startIndex": 109,
+              "endIndex": 115
+            }
+          ],
+          "startLocationLine": 240,
+          "authorEmail": null
+        },
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "cookies",
+          "fileName": "patients.html",
+          "language": "html",
+          "excerpt": "\n\t\t\t\t\t/*\tcheck if webfonts are disabled by user setting via cookie - or user must opt in.\t*/\n\t\t\t\t\tvar html = document.getElementsByTagName('html')[0];\n\t\t\t\t\tvar cookie_check = html.className.indexOf('av-cookies-needs-opt-in') >= 0 || html.className.indexOf('av-cookies-can-opt-out') >= 0;\n\t\t\t\t\tvar allow_continue = true;\n\t\t\t\t\tvar silent_accept_cookie = html.className.indexOf('av-cookies-user-silent-accept') >= 0;\n\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 51,
+              "endIndex": 58
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 109,
+              "endIndex": 116
+            },
+            {
+              "lineNumber": 5,
+              "startIndex": 59,
+              "endIndex": 66
+            }
+          ],
+          "startLocationLine": 242,
+          "authorEmail": null
+        }
+      ]
+    }
+  ],
+  "vendorList": [],
+  "interestsubjectList": [],
+  "created": "2022-03-04 07:51:11.417101",
+  "updated": "2022-03-04 07:51:11.417124"
+}
